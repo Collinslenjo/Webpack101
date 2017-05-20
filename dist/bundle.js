@@ -15625,9 +15625,11 @@ return zhTw;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_moment__);
 
 // iNitialize the first function
+//require("css-loader!../public/css/bootstrap.css");
 function greet(){
   var day = __WEBPACK_IMPORTED_MODULE_0_moment___default()().format('dddd');
-  console.log("Greetings Man, The day today is " + day +"!");
+  var printer = ("Greetings Man, The day today is " + day +"!"); 
+  '<div><h4>console.log(printer);</h4></div>'
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (greet);
