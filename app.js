@@ -11,3 +11,5 @@ app.get('/',function(req,res){
 app.listen(3000,function(){
 	console.log('local development server started on **localhost:3000**');
 });
+
+module.exports = app;

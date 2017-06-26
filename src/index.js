@@ -9,6 +9,5 @@ var hellos = document.querySelector('#hellos');
 
 button.addEventListener('click', function(e) {
   e.preventDefault();
-
   hellos.insertAdjacentHTML('beforeend', hello());
 });

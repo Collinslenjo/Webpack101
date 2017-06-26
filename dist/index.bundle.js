@@ -511,9 +511,10 @@ function updateLink (link, options, obj) {
 "use strict";
 
 
-// index.js
+// Index.js is the entry point
+// calling the css
 __webpack_require__(3);
-
+// calling the hello component
 var hello = __webpack_require__(6);
 
 var button = document.querySelector('.js-add-hello');
@@ -521,7 +522,6 @@ var hellos = document.querySelector('#hellos');
 
 button.addEventListener('click', function (e) {
   e.preventDefault();
-
   hellos.insertAdjacentHTML('beforeend', hello());
 });
 

@@ -12,4 +12,4 @@
 
 #### or use The Express server ####
 
-### Express server coming soon ###
+ - run npm start
