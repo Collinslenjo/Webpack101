@@ -1,20 +1,29 @@
-var path = require('path');
+const webpack = require('webpack');
+const path = require('path');
+
 module.exports = {
-  entry: './assets/js/index.js',
+  entry: path.join(__dirname, 'src/index.js'),
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.join(__dirname, 'dist'),
+    filename: 'index.bundle.js'
   },
-  // JSHint loader
   module: {
-    rules: [{
-      test: /\.js$/, //Run the loader on all .js files
-      exclude: '/node_modules/',// ignore all files in the node_modules folder
-      use: 'jshint-loader'
-    }],
-    loaders: [{ 
-      test: /\.css$/,
-      loaders: ["style-loader","css-loader"]
-    }]
-  }
+  	loaders: [
+  	{
+	  test: /\.html$/,
+	  loader: 'html-loader'
+	},
+	{
+	  test: /\.css$/,
+	  loaders: ['style-loader', 'css-loader']
+	},
+	{
+	  test: /\.js$/,
+	  exclude: /node_modules/,
+	  loader: 'babel-loader',
+	  query: {
+	    presets: ['es2015']
+	  }
+	}
+  ]}
 };
