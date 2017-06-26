@@ -1,25 +1,17 @@
 {
-  "name": "webpack101",
+  "name": "webpack-boilerplate",
   "version": "1.0.0",
-  "description": "webpack Tutorial",
+  "description": "My webpack BoilerPlate",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -p",
-    "watch": "webpack --watch",
-    "start": "node app.js && webpack --watch && webpack -p"
+    "build": "webpack",
+    "start": "node app.js"
   },
   "author": "Collinslenjo",
   "license": "ISC",
   "devDependencies": {
-    "css-loader": "^0.28.1",
-    "jshint": "^2.9.4",
-    "jshint-loader": "^0.8.4",
-    "style-loader": "^0.17.0",
-    "webpack": "^2.5.1"
   },
   "dependencies": {
-    "express": "^4.15.3",
-    "moment": "^2.18.1"
   }
 }
