@@ -13,3 +13,7 @@
 #### or use The Express server ####
 
  - run ``` npm start ```
+
+##### Features to be added
+- add webpack webpack-dev-server
+> configure it to reload on change of a file that it is watching
