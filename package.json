@@ -3,33 +3,24 @@
   "version": "1.0.0",
   "description": "My webpack BoilerPlate",
   "main": "app.js",
+  "author": "collins lenjo <collinslenjo.cl@gmail.com>",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack && node app.js"
+    "start": "webpack-dev-server"
   },
-  "author": "Collinslenjo",
-  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^0.28.4",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "html-loader": "^0.4.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.0",
-    "babel-preset-es2015": "^6.24.1",
-    "css-loader": "^0.28.4",
-    "ejs": "^2.5.6",
-    "express": "^4.15.3",
-    "html-loader": "^0.4.5",
-    "style-loader": "^0.18.2",
-    "webpack": "^3.0.0"
-  },
-  "dependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.0",
-    "babel-preset-es2015": "^6.24.1",
-    "css-loader": "^0.28.4",
-    "ejs": "^2.5.6",
-    "express": "^4.15.3",
-    "html-loader": "^0.4.5",
-    "style-loader": "^0.18.2",
-    "webpack": "^3.0.0"
+    "babel-preset-es2015": "^6.24.1"
   }
 }
