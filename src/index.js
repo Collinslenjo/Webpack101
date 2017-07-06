@@ -3,7 +3,6 @@
 require('./style.css');
 // calling the hello component
 var hello = require('./components/hello/hello.js');
-
 var button = document.querySelector('.js-add-hello');
 var hellos = document.querySelector('#hellos');
 
